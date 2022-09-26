@@ -1,0 +1,43 @@
+@api_host = http://localhost:8000
+@cookie =
+
+POST {{api_host}}/api/tokens/create
+Content-Type: application/json
+
+{
+    "phone":"+8201058625673"
+}
+###
+
+
+POST {{api_host}}/api/getProfile
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjY0MjAyOTQyLCJleHAiOjE2NjQyMDY1NDIsIm5iZiI6MTY2NDIwMjk0MiwianRpIjoidWE1clJnQklwRWJJQXJmcSIsInN1YiI6IjIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.WW0FP7yvvetinnYCyhZd3rKfqZkaH4T7Rqx1q39eX98
+
+{
+    "phone":"+8201058625673"
+}
+###
+
+
+###
+GET {{api_host}}/api/logout
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjY0MjAyOTQyLCJleHAiOjE2NjQyMDY1NDIsIm5iZiI6MTY2NDIwMjk0MiwianRpIjoidWE1clJnQklwRWJJQXJmcSIsInN1YiI6IjIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.WW0FP7yvvetinnYCyhZd3rKfqZkaH4T7Rqx1q39eX98
+Accept: application/json
+
+{
+
+}
+###
+
+
+POST {{api_host}}/api/login
+Content-Type: application/json
+
+{
+    "email": "100862@qq.com",
+    "password": "1234567"
+}
+###

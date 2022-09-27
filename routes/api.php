@@ -32,4 +32,5 @@ Route::group([
     'middleware' => ['auth:api2'],
 ], function ($router) {
     Route::get('/getProfile2', [MemberController::class, 'getProfile']);
+    Route::get('/logout', [AuthController::class, 'logout']);
 });

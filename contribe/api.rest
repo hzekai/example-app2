@@ -41,3 +41,30 @@ Content-Type: application/json
     "password": "1234567"
 }
 ###
+
+
+
+#############################
+
+
+
+POST {{api_host}}/api/tokens/create2
+Content-Type: application/json
+
+{
+
+}
+###
+
+
+
+
+GET {{api_host}}/api/getProfile2
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3Rva2Vucy9jcmVhdGUyIiwiaWF0IjoxNjY0MjA0OTMzLCJleHAiOjE2NjQyMDg1MzMsIm5iZiI6MTY2NDIwNDkzMywianRpIjoiRXhOa2t3N2Y3d1RpRjYzdyIsInN1YiI6IjEiLCJwcnYiOiI4NjY1YWU5Nzc1Y2YyNmY2YjhlNDk2Zjg2ZmE1MzZkNjhkZDcxODE4Iiwicm9sZSI6ImFwaTIifQ.MKci34_th9pxvMD95mYDI1EEKGm0wwKREwOmWEe_CRs
+
+{
+    "phone":"+8201058625673"
+}
+###

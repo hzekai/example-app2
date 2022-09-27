@@ -50,12 +50,26 @@ class MemberController extends Controller
         ]);
     }
 
-    public function getProfile(Request $request) {
-        $user = Member::first();
+    // public function getProfile(Request $request) {
+    //     $user = Member::first();
+    //     return response([
+    //         'code' => 0,
+    //         'msg' => 'success',
+    //         'data' => $user
+    //     ]);
+    // }
+
+    public function logout() {
+        auth()->guard('api2')->logout();
         return response([
             'code' => 0,
-            'msg' => 'success',
-            'data' => $user
+            'msg' => 'logout success!'
+        ]);
+    }
+
+    public function getProfile() {
+        return response([
+            'data' => auth()->guard('api2')->user()
         ]);
     }
 }

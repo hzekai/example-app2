@@ -39,6 +39,9 @@ class MemberController extends Controller
         $password = $request->password;
 
         $user = Member::where('phone', $phone)->first();
+        if (!isset($user)) {
+            return response()->json(['message' => 'user not exit'], 404);
+        }
         Log::info($phone . ', ' . $password);
         Log::info(json_encode($user));
         $token = Auth::guard('api2')->login($user);

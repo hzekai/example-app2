@@ -61,7 +61,7 @@ POST {{api_host}}/api/login2
 Content-Type: application/json
 
 {
-    "phone": "+8201058625673",
+    "phone": "+8201058625674",
     "password": "12345678"
 }
 ###
@@ -70,7 +70,7 @@ Content-Type: application/json
 GET {{api_host}}/api/getProfile2
 Content-Type: application/json
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luMiIsImlhdCI6MTY2NDI1MzI5NSwiZXhwIjoxNjY0MjU2ODk1LCJuYmYiOjE2NjQyNTMyOTUsImp0aSI6InZFMTNvbmRRTmVCRXdQemMiLCJzdWIiOiIxIiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCIsInJvbGUiOiJhcGkyIn0.lHVfPNNa3_NippvdVHsQ9VyDzfemJJTsHQ1oY6EHfIY
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luMiIsImlhdCI6MTY2NDI1MzQ3NywiZXhwIjoxNjY0MjU3MDc3LCJuYmYiOjE2NjQyNTM0NzcsImp0aSI6Im9TRGx2S1VOMmowWU41aFkiLCJzdWIiOiIxIiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCIsInJvbGUiOiJhcGkyIn0.QaYAx4ZnDZms7f6STvhg4nfWV_Q4hT7WYDxRbrfPM20
 
 {
     "phone":"+8201058625673"
@@ -80,7 +80,7 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vb
 
 GET {{api_host}}/api/logout
 Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luMiIsImlhdCI6MTY2NDI1MzI5NSwiZXhwIjoxNjY0MjU2ODk1LCJuYmYiOjE2NjQyNTMyOTUsImp0aSI6InZFMTNvbmRRTmVCRXdQemMiLCJzdWIiOiIxIiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCIsInJvbGUiOiJhcGkyIn0.lHVfPNNa3_NippvdVHsQ9VyDzfemJJTsHQ1oY6EHfIY
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luMiIsImlhdCI6MTY2NDI1MzQ3NywiZXhwIjoxNjY0MjU3MDc3LCJuYmYiOjE2NjQyNTM0NzcsImp0aSI6Im9TRGx2S1VOMmowWU41aFkiLCJzdWIiOiIxIiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCIsInJvbGUiOiJhcGkyIn0.QaYAx4ZnDZms7f6STvhg4nfWV_Q4hT7WYDxRbrfPM20
 Accept: application/json
 
 {

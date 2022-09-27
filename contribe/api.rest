@@ -44,7 +44,7 @@ Content-Type: application/json
 
 
 
-#############################
+############################# member
 
 
 
@@ -57,12 +57,20 @@ Content-Type: application/json
 ###
 
 
+POST {{api_host}}/api/login2
+Content-Type: application/json
+
+{
+    "phone": "+8201058625673",
+    "password": "12345678"
+}
+###
 
 
 GET {{api_host}}/api/getProfile2
 Content-Type: application/json
 Accept: application/json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL3Rva2Vucy9jcmVhdGUyIiwiaWF0IjoxNjY0MjA0OTMzLCJleHAiOjE2NjQyMDg1MzMsIm5iZiI6MTY2NDIwNDkzMywianRpIjoiRXhOa2t3N2Y3d1RpRjYzdyIsInN1YiI6IjEiLCJwcnYiOiI4NjY1YWU5Nzc1Y2YyNmY2YjhlNDk2Zjg2ZmE1MzZkNjhkZDcxODE4Iiwicm9sZSI6ImFwaTIifQ.MKci34_th9pxvMD95mYDI1EEKGm0wwKREwOmWEe_CRs
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luMiIsImlhdCI6MTY2NDI0MzU0NCwiZXhwIjoxNjY0MjQ3MTQ0LCJuYmYiOjE2NjQyNDM1NDQsImp0aSI6IjdCRnJWbkVsRDZYdVlQcGkiLCJzdWIiOiIxIiwicHJ2IjoiODY2NWFlOTc3NWNmMjZmNmI4ZTQ5NmY4NmZhNTM2ZDY4ZGQ3MTgxOCIsInJvbGUiOiJhcGkyIn0.2FfpMH4aRjSC8amqRBX3Z4SRYcl4tht_sfrDHoLntkc
 
 {
     "phone":"+8201058625673"
